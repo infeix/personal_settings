@@ -7,6 +7,7 @@
 * Git
 * Curl
 * powerline
+
 `sudo apt-get install vim git curl powerline`
 
 ## Other Programms
