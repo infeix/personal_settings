@@ -6,9 +6,10 @@
 * Vim
 * Git
 * Curl
+* htop
 * powerline
 
-`sudo apt-get install vim git curl powerline`
+`sudo apt-get install vim git curl powerline htop`
 
 ## Other Programms
 * Chrome
