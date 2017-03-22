@@ -18,7 +18,7 @@
 * Sublime Text 3
 * Eagle
 * KeePass
-* RVM
+* RVM https://rvm.io/rvm/install
 * npm
 * zsh
 * oh-my-zsh
