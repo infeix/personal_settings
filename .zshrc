@@ -83,24 +83,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/usr/opt/android-studio/bin" # Add Android Studio
 
-source /home/jo/.rvm/scripts/rvm
 alias be='bundle exec'
 alias xopen='xdg-open'
 alias gitka='gitk --all &disown'
 alias inp='invoker Procfile'
-alias android-studio='studio.sh &disown'
 JAVA_HOME='/opt/Oracle_Java/jdk1.8.0_91/jre'
 export JAVA_HOME
-SLACK_TOKEN='xoxp-7494490437-20146091075-116238611382-9df5c73bf8244593f6d9cb85756cbefd'
-export SLACK_TOKEN
-alias slackclidev='slackcli -a -h development'
 alias rebase-i='git rebase -i HEAD~10'
-alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
-alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 alias wetter='curl -s http://wttr.in/'
 
-
-export PATH="$HOME/.yarn/bin:$PATH"
