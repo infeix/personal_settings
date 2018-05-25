@@ -10,10 +10,11 @@
 * powerline
 * gitk
 
-`sudo apt-get install vim git curl powerline htop gitk`
+`sudo apt-get install git curl powerline htop gitk`
 
 ## Other Programms
 * Chrome
+* Firefox
 * Slack
 * Sublime Text 3
 * Eagle

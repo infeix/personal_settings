@@ -2,12 +2,12 @@ if &compatible
   set nocompatible
 endif
 
-set runtimepath+=/home/jo/~/.nvim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cach/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/home/jo/~/.nvim/bundles')
-  call dein#begin('/home/jo/~/.nvim/bundles')
+if dein#load_state('~/.cach/dein')
+  call dein#begin('~/.cach/dein')
 
-  call dein#add('/home/jo/~/.nvim/bundles/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.cach/dein/repos/github.com/Shougo/dein.vim')
 
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
@@ -50,12 +50,3 @@ if dein#check_install()
   call dein#install()
 endif
 
-let g:multi_cursor_use_default_mapping=0
-
-let g:multi_cursor_next_key='<C-d>'
-let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
-let g:multi_cursor_start_key='<C-d>'
-:map <S-A-Up> <C-v>
-:map <S-A-Down> <C-v>
