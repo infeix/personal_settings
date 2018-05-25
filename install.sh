@@ -1,10 +1,5 @@
 #!/bin/bash
 
-cp -ru . ~
-rm ~/terminal_settings.png
-rm ~/install.sh
-rm ~/README.md
-
 sudo apt-get install git curl powerline htop gitk firefox
 
 ## Install Neo Vim with some plugin
@@ -36,3 +31,9 @@ sudo apt-get install keepass2
 sudo apt-get install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+cp -ru . ~
+rm ~/terminal_settings.png
+rm ~/install.sh
+rm ~/README.md
+
