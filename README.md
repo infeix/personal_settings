@@ -3,18 +3,17 @@
 
 ## apt Packages
 
-* Vim
+* NeoVim
 * Git
 * Curl
 * htop
 * powerline
 * gitk
 
-`sudo apt-get install git curl powerline htop gitk`
+`sudo apt-get install git curl powerline htop gitk firefox`
 
 ## Other Programms
 * Chrome
-* Firefox
 * Slack
 * Sublime Text 3
 * Eagle
