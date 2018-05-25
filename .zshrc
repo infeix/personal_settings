@@ -83,14 +83,59 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source /home/jo/.rvm/scripts/rvm
+
 export PATH="$PATH:/usr/opt/android-studio/bin" # Add Android Studio
+
+export EDITOR='vim'
 
 alias be='bundle exec'
 alias xopen='xdg-open'
-alias gitka='gitk --all &disown'
-alias inp='invoker Procfile'
+alias gitka='gitk --all'
+alias inp='overmind start' # 'invoker Procfile'
 JAVA_HOME='/opt/Oracle_Java/jdk1.8.0_91/jre'
 export JAVA_HOME
 alias rebase-i='git rebase -i HEAD~10'
 alias wetter='curl -s http://wttr.in/'
 
+# START WORKING
+alias sw='source ~/scripts/sw.sh'
+# END WORKING
+alias ew='source ~/scripts/ew.sh'
+# LIST WORK
+alias listw='source ~/scripts/listw.sh'
+
+alias rrr='source ~/scripts/rrr.sh'
+alias nextcloud='source /opt/NextCloud/Nextcloud &disown'
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+alias printjobs='lpstat -o'
+alias printjobs-d='cancel -a -x'
+alias rmprintjobs='cancel -a -x'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add GO changes
+export GOPATH="$HOME/.gocode"
+export PATH="$PATH:$HOME/.gocode/bin"
+
+gitp() {
+  jo_blubber=$(eval 'git push 2>&1')
+
+  if [ "$jo_blubber[0,5]" = "fatal" ]; then
+    jo_bu="${jo_blubber##*$'\n'}"
+  fi
+
+  echo $jo_blubber
+
+  if [ "$jo_bu[0,34]" = "    git push --set-upstream origin" ]; then
+    jo_blubber=$(eval $jo_bu 2>&1)
+    echo $jo_blubber
+  fi
+}
+
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
