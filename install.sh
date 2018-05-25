@@ -31,3 +31,8 @@ sudo snap install sublime-text --classic
 sudo add-apt-repository ppa:jtaylor/keepass
 sudo apt-get update
 sudo apt-get install keepass2
+
+## Install zsh
+sudo apt-get install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

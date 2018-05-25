@@ -1,7 +1,7 @@
 # Personal settings and Programs I use
 
 
-## apt or snap Packages
+## software installed with the install.sh script
 
 * NeoVim
 * Git
@@ -13,13 +13,13 @@
 * Slack
 * Sublime Text
 * KeePass
+* zsh
+* oh-my-zsh
 
 `sudo apt-get install git curl powerline htop gitk firefox`
 
-## Other Programms
+## Other Programms need to be installed manually
 * Eagle
-* zsh
-* oh-my-zsh
 
 ## Sublime Packages
 
@@ -27,7 +27,7 @@
 * RuboCop
 
 ## Other steps
-* copy .rc files
+* copy .rc files (in install script)
 * copy id_rsa files
 * setting up terminal as on the picture terminal_settings.png
 
