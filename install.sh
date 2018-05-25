@@ -28,6 +28,6 @@ sudo snap install slack --classic
 sudo snap install sublime-text --classic
 
 ## Install keepass
-add-apt-repository ppa:jtaylor/keepass
-apt-get update
-apt-get install keepass2
+sudo add-apt-repository ppa:jtaylor/keepass
+sudo apt-get update
+sudo apt-get install keepass2
