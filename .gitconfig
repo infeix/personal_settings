@@ -1,0 +1,26 @@
+[core]
+	editor = vim
+[alias]
+  lg = "!clear; \
+        while true; do \
+          clear;\
+          git --no-pager log --graph --abbrev-commit --decorate --format=format:'%d' --all --max-count=19;\
+          inotifywait -q . ;\
+        done;"
+
+  amnd    = commit --amend --no-edit
+  chp     = cherry-pick
+  st      = status
+  co      = checkout
+  pull    = pull --no--ff
+  br      = branch
+  bra     = branch -a
+  watch = "!clear; \
+           fswatch -r -e modify,move,create,delete --format \"%p %f\" @/.git . | \
+           while read file; do \
+             clear;\
+             git status --short;\
+             git --no-pager diff --shortstat;\
+           done;"
+[push]
+	default = simple
